@@ -35,9 +35,6 @@ Desenvolvedores de software, testers, e estudantes de tecnologia interessados em
   - Requer manutenção constante
   - Não substitui testes manuais completamente
 
-**Atividade Prática:**  
-*Discussão em grupo sobre a importância dos testes automatizados e em quais cenários eles seriam mais vantajosos.*
-
 ---
 
 ### 2. Ferramentas de Testes Automatizados
@@ -71,4 +68,4 @@ Desenvolvedores de software, testers, e estudantes de tecnologia interessados em
 **Atividade Prática:**  
 - Demonstração rápida de como criar e rodar um teste automatizado simples utilizando o Robot Framework.
 - Ensinar como escrever testes automatizados eficazes.
-- Discutir boas práticas de testes automatizados.
+- Discussão em grupo sobre a importância dos testes automatizados e em quais cenários eles seriam mais vantajosos.
