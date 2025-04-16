@@ -2,20 +2,25 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}      
-${BROWSER}  
+${URL}         https://front.serverest.dev/login    
+${BROWSER}     chrome
+${EMAIL}       horadoqa@teste.com
+${PASSWORD}    1q2w3e4r
+${ENTRAR}      //*[@id="root"]/div/div/form/button
+${MENSAGE}     Este é seu sistema para administrar seu ecommerce.
+
 
 *** Keywords ***
 
 
 *** Test Cases ***
 Login Test
-    Open Browser    https://front.serverest.dev/login    chrome
+    Open Browser    ${URL}    ${BROWSER}
     Sleep    5s
-    Input Text      id=email    horadoqa@teste.com
-    Input Text      id=password    1q2w3e4r
+    Input Text    id=email    ${EMAIL}
+    Input Text      id=password    ${PASSWORD}
     Sleep    5s
-    Click Button    //*[@id="root"]/div/div/form/button
+    Click Button    ${ENTRAR}
     Sleep    5s
-    Wait Until Page Contains    Este é seu sistema para administrar seu ecommerce.    timeout=10s
+    Wait Until Page Contains    ${MENSAGE}    timeout=10s
     Close Browser
