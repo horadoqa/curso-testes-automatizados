@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-04-16T23:11:19.380767" rpa="false" schemaversion="5">
+<suite id="s1" name="Curso-Testes-Automatizados" source="/home/rfahham/projetos/curso-testes-automatizados">
+<suite id="s1-s1" name="Curso-Robot-Framework" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework">
+<suite id="s1-s1-s1" name="Projetos" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos">
+<suite id="s1-s1-s1-s1" name="Serverest" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest">
+<suite id="s1-s1-s1-s1-s1" name="Live1-Codigo" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live1-codigo">
+<suite id="s1-s1-s1-s1-s1-s1" name="Login" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live1-codigo/login.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Login Test" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-16T23:11:19.585671" level="INFO">Opening browser 'chrome' to base url 'https://front.serverest.dev/login'.</msg>
+<arg>https://front.serverest.dev/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-16T23:11:19.585025" elapsed="1.966314"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-16T23:11:26.553068" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-16T23:11:21.552086" elapsed="5.001839"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-16T23:11:26.558549" level="INFO">Typing text 'horadoqa@teste.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>horadoqa@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-16T23:11:26.556322" elapsed="0.156604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-16T23:11:26.713706" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>1q2w3e4r</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-16T23:11:26.713303" elapsed="0.122533"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-16T23:11:32.596520" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-16T23:11:26.836175" elapsed="5.760920"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-16T23:11:32.598857" level="INFO">Clicking button '//*[@id="root"]/div/div/form/button'.</msg>
+<arg>//*[@id="root"]/div/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-16T23:11:32.598113" elapsed="0.116994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-16T23:11:37.716426" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-16T23:11:32.715567" elapsed="5.002040"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Este é seu sistema para administrar seu ecommerce.</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-16T23:11:37.719203" elapsed="0.021750"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-16T23:11:37.741402" elapsed="0.068917"/>
+</kw>
+<status status="PASS" start="2025-04-16T23:11:19.582650" elapsed="18.228321"/>
+</test>
+<status status="PASS" start="2025-04-16T23:11:19.418027" elapsed="18.394839"/>
+</suite>
+<status status="PASS" start="2025-04-16T23:11:19.414142" elapsed="18.401336"/>
+</suite>
+<status status="PASS" start="2025-04-16T23:11:19.410132" elapsed="18.407885"/>
+</suite>
+<status status="PASS" start="2025-04-16T23:11:19.407715" elapsed="18.412722"/>
+</suite>
+<status status="PASS" start="2025-04-16T23:11:19.405358" elapsed="18.417555"/>
+</suite>
+<status status="PASS" start="2025-04-16T23:11:19.383658" elapsed="18.441560"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Curso-Testes-Automatizados">Curso-Testes-Automatizados</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Curso-Robot-Framework">Curso-Testes-Automatizados.Curso-Robot-Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Projetos">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Serverest">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Live1-Codigo">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live1-Codigo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Login">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live1-Codigo.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
