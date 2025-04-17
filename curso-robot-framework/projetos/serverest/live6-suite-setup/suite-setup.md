@@ -1,4 +1,6 @@
-Boa! Isso vai deixar o processo mais profissional e automático — especialmente quando você quiser rodar os testes de login sem se preocupar se o usuário já foi cadastrado.
+# Suite Setup
+
+Vamos deixar o processo mais profissional e automático — especialmente quando você quiser rodar os testes de login sem se preocupar se o usuário já foi cadastrado.
 
 Vamos montar **uma suíte de testes com `Suite Setup`**, que **cadastra o usuário automaticamente antes de rodar qualquer teste da suíte** (no caso, o teste de login).
 
