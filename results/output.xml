@@ -1,107 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-04-16T23:21:19.652477" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-04-16T23:33:58.039417" rpa="false" schemaversion="5">
 <suite id="s1" name="Curso-Testes-Automatizados" source="/home/rfahham/projetos/curso-testes-automatizados">
 <suite id="s1-s1" name="Curso-Robot-Framework" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework">
 <suite id="s1-s1-s1" name="Projetos" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos">
 <suite id="s1-s1-s1-s1" name="Serverest" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest">
-<suite id="s1-s1-s1-s1-s1" name="Live4-Keywords-Resource" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live4-keywords-resource">
-<suite id="s1-s1-s1-s1-s1-s1" name="Login" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live4-keywords-resource/login">
-<suite id="s1-s1-s1-s1-s1-s1-s1" name="Login" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live4-keywords-resource/login/login.robot">
-<test id="s1-s1-s1-s1-s1-s1-s1-t1" name="Login Test" line="5">
-<kw name="Abrir Browser" owner="keywords">
+<suite id="s1-s1-s1-s1-s1" name="Live5-Pom" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live5-pom">
+<suite id="s1-s1-s1-s1-s1-s1" name="Tests" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live5-pom/tests">
+<suite id="s1-s1-s1-s1-s1-s1-s1" name="Login" source="/home/rfahham/projetos/curso-testes-automatizados/curso-robot-framework/projetos/serverest/live5-pom/tests/login.robot">
+<test id="s1-s1-s1-s1-s1-s1-s1-t1" name="Login com Usuário Cadastrado" line="5">
+<kw name="Acessar Página de Login" owner="LoginPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-16T23:21:19.847346" level="INFO">Opening browser 'chrome' to base url 'https://front.serverest.dev/login'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2025-04-16T23:33:58.221874" level="INFO">Opening browser 'chrome' to base url 'https://front.serverest.dev/login'.</msg>
+<arg>https://front.serverest.dev/login</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-16T23:21:19.846557" elapsed="2.229127"/>
+<status status="PASS" start="2025-04-16T23:33:58.221522" elapsed="2.131770"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-16T23:21:27.346659" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-16T23:21:22.076041" elapsed="5.270911"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-16T23:34:00.353625" elapsed="0.017305"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:19.845009" elapsed="7.502147"/>
+<status status="PASS" start="2025-04-16T23:33:58.220615" elapsed="2.150615"/>
 </kw>
-<kw name="Inserir E-mail" owner="keywords">
+<kw name="Preencher Formulário de Login" owner="LoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-16T23:21:27.349238" level="INFO">Typing text 'horadoqa@teste.com' into text field 'id=email'.</msg>
+<msg time="2025-04-16T23:34:00.373003" level="INFO">Typing text 'horadoqa@teste.com' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-16T23:21:27.348536" elapsed="0.161641"/>
+<status status="PASS" start="2025-04-16T23:34:00.372327" elapsed="0.261817"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-16T23:21:32.511155" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-16T23:21:27.510531" elapsed="5.001296"/>
-</kw>
-<status status="PASS" start="2025-04-16T23:21:27.347938" elapsed="5.164406"/>
-</kw>
-<kw name="Inserir Senha" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-16T23:21:32.517113" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
+<msg time="2025-04-16T23:34:00.634883" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
 <arg>id=password</arg>
-<arg>${PASSWORD}</arg>
+<arg>${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-16T23:21:32.515644" elapsed="0.127355"/>
+<status status="PASS" start="2025-04-16T23:34:00.634489" elapsed="0.101762"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-16T23:21:37.646407" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-16T23:21:32.643399" elapsed="5.012073"/>
+<status status="PASS" start="2025-04-16T23:34:00.371656" elapsed="0.364838"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:32.514275" elapsed="5.147885"/>
-</kw>
-<kw name="Clicar Botão Entrar" owner="keywords">
+<kw name="Submeter Login" owner="LoginPage">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-16T23:21:37.669555" level="INFO">Clicking button '//*[@id="root"]/div/div/form/button'.</msg>
-<arg>${ENTRAR}</arg>
+<msg time="2025-04-16T23:34:00.737637" level="INFO">Clicking button '//*[@id="root"]/div/div/form/button'.</msg>
+<arg>//*[@id="root"]/div/div/form/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-16T23:21:37.667999" elapsed="0.119256"/>
+<status status="PASS" start="2025-04-16T23:34:00.737338" elapsed="0.097749"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-16T23:21:42.788486" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-16T23:21:37.787690" elapsed="5.001235"/>
+<status status="PASS" start="2025-04-16T23:34:00.736898" elapsed="0.098502"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:37.665747" elapsed="5.123554"/>
-</kw>
-<kw name="Validar" owner="keywords">
+<kw name="Verificar Login com Sucesso" owner="LoginPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${MENSAGE}</arg>
+<arg>Este é seu sistema para administrar seu ecommerce.</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-04-16T23:21:42.790442" elapsed="0.021522"/>
+<status status="PASS" start="2025-04-16T23:34:00.836685" elapsed="1.148136"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:42.789805" elapsed="0.022673"/>
+<status status="PASS" start="2025-04-16T23:34:00.836128" elapsed="1.149069"/>
 </kw>
-<kw name="Fechar Borwser" owner="keywords">
+<kw name="Fechar Navegador" owner="LoginPage">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-16T23:21:42.813894" elapsed="0.080298"/>
+<status status="PASS" start="2025-04-16T23:34:01.986097" elapsed="0.064503"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:42.813171" elapsed="0.081535"/>
+<status status="PASS" start="2025-04-16T23:34:01.985639" elapsed="0.065409"/>
 </kw>
-<status status="PASS" start="2025-04-16T23:21:19.843275" elapsed="23.052088"/>
+<status status="PASS" start="2025-04-16T23:33:58.219591" elapsed="3.832045"/>
 </test>
-<status status="PASS" start="2025-04-16T23:21:19.695031" elapsed="23.202723"/>
+<status status="PASS" start="2025-04-16T23:33:58.077451" elapsed="3.976632"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.690197" elapsed="23.213162"/>
+<status status="PASS" start="2025-04-16T23:33:58.074989" elapsed="3.983501"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.687085" elapsed="23.220454"/>
+<status status="PASS" start="2025-04-16T23:33:58.072425" elapsed="3.989872"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.684953" elapsed="23.226779"/>
+<status status="PASS" start="2025-04-16T23:33:58.070106" elapsed="3.995062"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.681983" elapsed="23.234621"/>
+<status status="PASS" start="2025-04-16T23:33:58.067657" elapsed="4.000617"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.679176" elapsed="23.240663"/>
+<status status="PASS" start="2025-04-16T23:33:58.064289" elapsed="4.007377"/>
 </suite>
-<status status="PASS" start="2025-04-16T23:21:19.656345" elapsed="23.266255"/>
+<status status="PASS" start="2025-04-16T23:33:58.042458" elapsed="4.032675"/>
 </suite>
 <statistics>
 <total>
@@ -114,9 +91,9 @@
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Curso-Robot-Framework">Curso-Testes-Automatizados.Curso-Robot-Framework</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Projetos">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Serverest">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Live4-Keywords-Resource">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live4-Keywords-Resource</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Login">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live4-Keywords-Resource.Login</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1-s1" name="Login">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live4-Keywords-Resource.Login.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Live5-Pom">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live5-Pom</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Tests">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live5-Pom.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1-s1" name="Login">Curso-Testes-Automatizados.Curso-Robot-Framework.Projetos.Serverest.Live5-Pom.Tests.Login</stat>
 </suite>
 </statistics>
 <errors>
