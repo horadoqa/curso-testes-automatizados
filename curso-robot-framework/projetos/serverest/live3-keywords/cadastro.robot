@@ -31,23 +31,23 @@ Clicar Botão Administrador
     Click Button    id=administrador
     Sleep    5s
 
-Clicar Botão Entrar
+Clicar Botão Cadastrar
     Click Button    ${ENTRAR}
     Sleep    5s
 
 Validar
     Wait Until Page Contains    ${MENSAGE}    timeout=10s
 
-Fechar Borwser
+Fechar Browser
     Close Browser
 
 *** Test Cases ***
-Login Test
+Cadastro Test
     Abrir Browser
     Inserir Nome
     Inserir E-mail
     Inserir Senha
     Clicar Botão Administrador
-    Clicar Botão Entrar
+    Clicar Botão Cadastrar
     Validar
-    Fechar Borwser
+    Fechar Browser

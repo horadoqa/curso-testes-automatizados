@@ -28,8 +28,9 @@ Clicar Botão Entrar
 
 Validar
     Wait Until Page Contains    ${MENSAGE}    timeout=10s
+    Sleep    5s
 
-Fechar Borwser
+Fechar Browser
     Close Browser
 
 *** Test Cases ***
@@ -39,5 +40,5 @@ Login Test
     Inserir Senha
     Clicar Botão Entrar
     Validar
-    Fechar Borwser
+    Fechar Browser
     
