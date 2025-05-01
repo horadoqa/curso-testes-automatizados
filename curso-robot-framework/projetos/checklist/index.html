@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checklist - Robot Framework</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f6f8b;
+    }
+
+    .checklist {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .checklist-item input[type="checkbox"] {
+      margin-right: 1rem;
+      transform: scale(1.2);
+    }
+
+    label {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Checklist - Robot Framework</h1>
+
+  <div class="checklist" id="checklist-principal">
+
+    <div class="checklist-item" id="item-instalacao-python">
+        <input type="checkbox" id="chk-instalacao-python" />
+        <label for="chk-instalacao-python">Instalar o Python (https://www.python.org/)</label>
+      </div>
+
+    <div class="checklist-item" id="item-instalacao-robot">
+      <input type="checkbox" id="chk-instalacao-robot" />
+      <label for="chk-instalacao-robot">Instalar o Robot Framework (https://robotframework.org/)</label>
+    </div>
+
+    <div class="checklist-item" id="item-instalacao-seleniumlibrary">
+      <input type="checkbox" id="chk-instalacao-seleniumlibrary" />
+      <label for="chk-instalacao-seleniumlibrary">Instalar o Selenium Library (https://docs.robotframework.org/docs/different_libraries/selenium)</label>
+    </div>
+
+    <div class="checklist-item" id="item-instalacao-ChromeDriver">
+      <input type="checkbox" id="chk-instalacao-ChromeDriver" />
+      <label for="chk-instalacao-ChromeDriver">Instalar o ChromeDriver (https://googlechromelabs.github.io/chrome-for-testing/)</label>
+    </div>
+
+    <div class="checklist-item" id="item-primeiro-teste">
+      <input type="checkbox" id="chk-primeiro-teste" />
+      <label for="chk-primeiro-teste">Escrever o primeiro caso de teste (https://serverest.dev)</label>
+    </div>
+
+    <div class="checklist-item" id="item-variaveis">
+      <input type="checkbox" id="chk-variaveis" />
+      <label for="chk-variaveis">Usar variáveis no teste</label>
+    </div>
+
+    <div class="checklist-item" id="item-keywords">
+      <input type="checkbox" id="chk-keywords" />
+      <label for="chk-keywords">Criar e usar Keywords personalizadas</label>
+    </div>
+
+    <div class="checklist-item" id="item-keywords-resource">
+      <input type="checkbox" id="chk-keywords-resource" />
+      <label for="chk-keywords-resource">Organizar keywords em arquivos resource</label>
+    </div>
+
+    <div class="checklist-item" id="item-pom">
+      <input type="checkbox" id="chk-pom" />
+      <label for="chk-pom">Aplicar o padrão Page Object Model (POM)</label>
+    </div>
+
+  </div>
+
+</body>
+</html>
