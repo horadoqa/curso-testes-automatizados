@@ -38,5 +38,5 @@ Clicar Botão Entrar
 Validar
     Wait Until Page Contains    ${MENSAGE}    timeout=10s
 
-Fechar Borwser
+Fechar Browser
     Close Browser

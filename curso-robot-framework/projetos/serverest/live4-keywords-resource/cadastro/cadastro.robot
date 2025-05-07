@@ -2,7 +2,7 @@
 Resource    keywords.resource
 
 *** Test Cases ***
-Login Test
+Cadastro Test
     Abrir Browser
     Inserir Nome
     Inserir E-mail
@@ -10,4 +10,4 @@ Login Test
     Clicar Botão Administrador
     Clicar Botão Entrar
     Validar
-    Fechar Borwser
+    Fechar Browser

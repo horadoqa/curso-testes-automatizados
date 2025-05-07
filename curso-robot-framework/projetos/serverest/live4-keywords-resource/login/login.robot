@@ -8,5 +8,5 @@ Login Test
     Inserir Senha
     Clicar Botão Entrar
     Validar
-    Fechar Borwser
+    Fechar Browser
     
